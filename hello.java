@@ -3,8 +3,6 @@ public RollingProximityId generateId(int intervalNumber)
 {
     return new RollingProximityId(
         encryptor.encrypt(
-            generatePaddedData(
-                intervalNumber, 
-                aesPadding)), 
+            generatePaddedData(intervalNumber, aesPadding)), 
         true);
 }
